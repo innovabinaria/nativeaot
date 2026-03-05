@@ -1,5 +1,5 @@
 ﻿param(
-  [string]$BaseDir = "C:\Users\VICTOR\Downloads\Charlas\NetconfBCP\nativeaot-compare9",
+  [string]$BaseDir = "path\nativeaot-compare9",
   [string]$ExeName = "HeavyApi9.exe",
   [int]$PortJit = 5077,
   [int]$PortAot = 5078,
