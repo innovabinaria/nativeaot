@@ -1,0 +1,73 @@
+# ------------------------------
+# .NET / C#
+# ------------------------------
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+*.VC.db
+*.VC.VC.opendb
+
+# Rider / ReSharper
+.idea/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Test / coverage
+TestResults/
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# Publish outputs (generated locally for the demo)
+out-jit9/
+out-aot9/
+publish/
+
+# Large generated workload file
+data.bin
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# PowerShell history / local artifacts
+*.ps1xml
+
+# Generated files from local runs
+*.pid
+
+# If you ever add environment files
+.env
+.env.*
+!.env.example

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Opcional (recomendado): para publish más predecible en CI -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <!-- Solo aplica cuando publiques con: -p:AOT=true -->
+  <PropertyGroup Condition="'$(AOT)'=='true'">
+    <!-- NativeAOT -->
+    <PublishAot>true</PublishAot>
+
+    <OptimizationPreference>Speed</OptimizationPreference>
+
+    <!-- Trimming  (AOT-friendly) -->
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>full</TrimMode>
+
+    <!-- Reduce tamaño -->
+    <StripSymbols>true</StripSymbols>
+
+    <!-- Reduce tamaño, pero cambia comportamiento de cultura/globalización -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>
